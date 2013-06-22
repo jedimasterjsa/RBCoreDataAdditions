@@ -25,7 +25,6 @@
 #import "RBFetchedResultsTableVC.h"
 #import "RBCoreDataManager.h"
 
-
 @interface RBFetchedResultsTableVC () {
     @private
     NSManagedObjectContext * _context;

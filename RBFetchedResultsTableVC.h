@@ -25,7 +25,6 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-
 @interface RBFetchedResultsTableVC : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate> {
     
     @private 
