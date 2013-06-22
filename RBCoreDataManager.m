@@ -63,7 +63,7 @@ static RBCoreDataManager * _defaultManager = nil;
 /**
  * A serial quueue used to serialize all requests to the default MOC.
  */
-@property (nonatomic, assign) dispatch_queue_t defaultMOCQueue;
+@property (nonatomic, strong) dispatch_queue_t defaultMOCQueue;
 
 #endif
 

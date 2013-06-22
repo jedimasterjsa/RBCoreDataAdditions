@@ -95,7 +95,7 @@
 #pragma mark - Template methods
 
 - (NSString *)entityName {
-    NSAssert1(NO, @"Required method: %@ not overriden.", NSStringFromSelector(@selector(_cmd)));
+    NSAssert1(NO, @"Required method: %@ not overriden.", NSStringFromSelector(_cmd));
     return nil;
 }
 
@@ -108,7 +108,7 @@
 }
 
 - (NSArray *)sortDescriptors {
-    NSAssert1(NO, @"Required method: %@ not overriden.", NSStringFromSelector(@selector(_cmd)));
+    NSAssert1(NO, @"Required method: %@ not overriden.", NSStringFromSelector(_cmd));
     return nil;
 }
 
@@ -177,7 +177,6 @@
         _fetchedResultsController = fetchController;
         
         NSError * error = nil;
-        
         if (![_fetchedResultsController performFetch:&error]) {
             // !!!: Handle this error however you want.
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
